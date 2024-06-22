@@ -15,7 +15,7 @@ const TrialPart = () => {
             </div>
             <h6 className='text-primary uppercase'>trendy application</h6>     
           </Flex>
-          <Heading className='text-[80px] w-[580px] mx-auto font-bold text-white pb-[40px] pt-3'>Get a free trial for <span className='text-primary'>30</span> days</Heading>
+          <Heading className='text-5xl lg:!text-[80px] w-[300px] lg:w-[580px] mx-auto font-bold text-white pb-[40px] pt-3'>Get a free trial for <span className='text-primary'>30</span> days</Heading>
           <Button BtnName='get a free trial' className='text-base capitalize text-white bg-BtnC px-9 py-4 rounded-full hover:bg-transparent border-2 border-primary hover:text-primary'/>
        </div>
     </div>

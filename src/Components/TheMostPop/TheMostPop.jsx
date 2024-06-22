@@ -12,15 +12,15 @@ import { CiCircleCheck } from "react-icons/ci";
 const TheMostPop = () => {
   return (
     <>
-        <Container className='mt-40'>
-            <Flex className='justify-center'>
+        <Container className='mt-20 lg:mt-40'>
+            <Flex className='flex-wrap justify-center'>
                 <div>
                     <Image Imgsrc={Img}/>
                 </div>
-                <div className='w-[550px] pl-14'>
+                <div className='w-[550px] mt-10 lg:mt-0 pl-6 lg:pl-14'>
                     <Image Imgsrc={dots}/>
                     <Heading className='capitalize pt-4'>The most popular application 2021</Heading>
-                    <p className='text-[27px] text-secondary pt-[30px]'>Culpa non ex tempor qui nulla laborum. Laboris culpa ea incididunt dolore ipsum.</p>
+                    <p className='text-lg lg:text-[27px] text-secondary pt-[30px]'>Culpa non ex tempor qui nulla laborum. Laboris culpa ea incididunt dolore ipsum.</p>
                     <List className='pt-[30px]'>
                         <ListItem className='flex items-center text-base text-secondary'><CiCircleCheck className='text-primary text-2xl mr-4'/>Elit mollit aliqua quis ad sint nulla Lorem commodo reprehenderit.</ListItem>
                         <ListItem className='flex items-center text-base text-secondary pt-4'><CiCircleCheck className='text-primary text-2xl mr-4'/>Tempor consectetur aliqua aute veniam occaecat eu do esse adipisicing ut. </ListItem>

@@ -13,14 +13,14 @@ const Footer = () => {
   return (
     <>
     <div className='bg-FooterBG bg-cover'>
-        <div className='bg-white pb-10 pt-10 mx-auto w-[1000px]
+        <div className='bg-white pb-10 pt-10 mx-auto lg:w-[1000px]
             rounded-3xl px-8'>
-            <Flex className='justify-center items-center'>
+            <Flex className='max-sm:flex-wrap justify-center items-center'>
             <div>
                 <Image Imgsrc={card} />
             </div>
             <div>
-            <Flex className=' items-center'>
+            <Flex className='items-center'>
             <div className='mr-2.5'>
               <Image Imgsrc={dots} alt="" />
             </div>
@@ -39,21 +39,21 @@ const Footer = () => {
             </div>
             </Flex>
         </div>
-        <div className='pt-20 pb-12 w-2/5 mx-auto flex'>
-            <List className='flex gap-x-12 text-lg  text-white'>
-                <ListItem ItemName='Features' className='hover:text-primary duration-300 ' />
-                <ListItem ItemName='Download app' className='hover:text-primary duration-300 !list-disc' />
-                <ListItem ItemName='UI screens' className='hover:text-primary duration-300 !list-disc' />
-                <ListItem ItemName='Testimonials' className='hover:text-primary duration-300 !list-disc' />
-                <ListItem ItemName='FAQ' className='hover:text-primary duration-300 !list-disc' />
-                <ListItem ItemName='' className='hover:text-primary duration-300 !list-disc' />
+        <div className='pt-20 pb-12 w-2/5 mx-auto lg:flex'>
+            <List className='lg:flex gap-x-10 text-lg text-white text-center !list-disc'>
+                <ListItem ItemName='Features' className='hover:text-primary duration-300 lg:!list-disc' />
+                <ListItem ItemName='Download app' className=' hover:text-primary duration-300 lg:!list-disc' />
+                <ListItem ItemName='UI screens' className='hover:text-primary duration-300 lg:!list-disc' />
+                <ListItem ItemName='Testimonials' className='hover:text-primary duration-300 lg:!list-disc' />
+                <ListItem ItemName='FAQ' className='hover:text-primary duration-300 lg:!list-disc' />
+                <ListItem ItemName='' className='hover:text-primary duration-300 lg:!list-disc' />
+                <Button className='text-primary text-base border-2 rounded-full border-primary py-1 px-5 ml-2.5 hover:text-white hover:bg-BtnC mt-5 lg:mt-0' BtnName='Free Trial' />
             </List>
-            <Button className='text-primary text-base border-2 rounded-full border-primary py-1 px-5 ml-2.5 hover:text-white hover:bg-BtnC' BtnName='Free Trial' />
-            </div>
+        </div>
             <div className='text-center text-[#B3B1B7]'>
                 <hr className='border-[#B3B1B7] '/>
                 <h6 className='py-5'>© All rights reserved. Upland 2020</h6>
-        </div>
+            </div>
     </div>
     </>
   )

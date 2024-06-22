@@ -20,20 +20,22 @@ const QuestionPart = () => {
   return (
     <div>
         <Container>
-            <Flex className='justify-center'>
-                <div className='bg-PlayBg bg-cover w-[552px] mr-[30px]'>
-                    <div className='w-[500px] h-[500px] rounded-full bg-[#BD93D8] flex justify-center items-center mx-auto'>
+            <Flex className='flex-wrap justify-center'>
+                <div className='bg-PlayBg bg-cover w-[552px] lg:mr-[30px]'>
+                    <div className='w-[300px] lg:w-[500px] h-[300px] lg:h-[500px] rounded-full bg-[#BD93D8] flex justify-center items-center mx-auto'>
                       <div className='w-[100px] h-[100px] rounded-full bg-[#fff] text-3xl text-primary flex justify-center items-center'><CiPlay1 /></div>
                     </div>
                 </div>
               <div>
-                <Image Imgsrc={dots}/>
-                <Heading className='pt-3 pb-12'>Frequently Asked Questions</Heading>
-                <div className='border-0 w-[555px]'>                  
+                <div className='pt-20 lg:pt-0'>
+                  <Image Imgsrc={dots}/>
+                  <Heading className='pt-3 pb-12'>Frequently Asked Questions</Heading>
+                </div>
+                <div className='border-0 w-[350px] lg:w-[555px]'>                  
                     <div className={`relative flex items-start justify-between cursor-pointer  
                        ${show?'pb-0':'pb-5'}`} onClick={()=>setShow(!show)} > 
                       <div className='w-[555px]'>
-                          <h3 className={`text-[24px] font-medium border-b-2 border-dotted  w-full pb-5 ${show?'border-red-500':'border-secondary'}`}>How to start using Upland Application?
+                          <h3 className={`text-xl lg:text-2xl font-medium border-b-2 border-dotted  w-full pb-5 ${show?'border-red-500':'border-secondary'}`}>How to start using Upland Application?
                           </h3>
                           {show&&
                             <div>
@@ -47,7 +49,7 @@ const QuestionPart = () => {
                     </div>
                     <div className={`relative flex items-start justify-between cursor-pointer  ${show1?'pb-0':'pb-5'}`} onClick={()=>setShow1(!show1)}> 
                     <div className='w-[555px]'>
-                        <h3 className={`text-[24px] font-medium border-b-2 border-dotted  pb-5 ${show1?"border-red-500":"border-secondary"} `}>How can I register?
+                        <h3 className={`text-xl lg:text-2xl font-medium border-b-2 border-dotted  pb-5 ${show1?"border-red-500":"border-secondary"} `}>How can I register?
                         </h3>
                         {show1&&
                           <div>
@@ -62,7 +64,7 @@ const QuestionPart = () => {
 
                   <div className={`relative flex items-start justify-between cursor-pointer  ${show2?'pb-0':'pb-5'}`} onClick={()=>setShow2(!show2)}> 
                     <div className='w-[555px]'>
-                        <h3 className={`text-[24px] font-medium border-b-2 border-dotted  pb-5 ${show2?"border-red-500":"border-secondary"}`}>Can I use free plan permanently?
+                        <h3 className={`text-xl lg:text-2xl font-medium border-b-2 border-dotted  pb-5 ${show2?"border-red-500":"border-secondary"}`}>Can I use free plan permanently?
                         </h3>
                         {show2&&
                           <div>

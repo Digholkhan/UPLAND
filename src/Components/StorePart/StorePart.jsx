@@ -13,10 +13,10 @@ import Flex from '../Flex'
 
 const StorePart = () => {
   return (
-    <div className='bg-BgElement bg-no-repeat bg-right-top'>  
+    <div className='lg:bg-BgElement bg-no-repeat lg:bg-right-top '>  
         <Container>
-            <div className='py-40'>
-                <Flex className='justify-center'>
+            <div className='py-16 lg:py-40'>
+                <Flex className='flex-wrap justify-center'>
                     <div className='w-[500px]'>
                         <Image Imgsrc={dots}/>
                         <Heading className='pt-[14px]'>easy download and ready to use</Heading>
@@ -29,7 +29,7 @@ const StorePart = () => {
                         </div>
                     </div>
                     
-                        <Box className='w-[300px] pl-[100px]'>
+                        <Box className='w-[300px] lg:pl-[100px]'>
                             <h6 className='text-primary font-medium text-xs'>Basic</h6>
                             <h5 className='text-[32px] font-medium'>$12</h5>
                             <p className='text-secondary text-base pb-2.5 border-b-2 border-[#5841a39e] border-dotted space-x-2'>/per month</p>

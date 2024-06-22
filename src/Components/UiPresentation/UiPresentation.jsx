@@ -14,10 +14,6 @@ import './slider'
 import './UiPresentation.css'
 
 
-
-
-
-
 const UiPresentation = () => {
     const settings = {
         className: "center",
@@ -28,44 +24,8 @@ const UiPresentation = () => {
         speed: 500
     };
   return (
-    <>
-        
-        {/* <div className='bg-Uipresentaion bg-cover bg-no-repeat'>
-            <Container>
-                <div>
-                    <div className="w-4 mx-auto text-center mt-80 h-full">
-                        <Image Imgsrc={dots} className='h-full'/>
-                    </div>
-                    <Heading className='text-center text-white pt-4'>watch our UI presentation</Heading>
-                </div>
-
-                <div >
-                    <div class="carousel mt-[-100px] ">
-                        <div class="carousel-item Vbl">
-                            <Image Imgsrc={Img0}/>
-                        </div>
-                        
-                        <div class="carousel-item Vbl">
-                            <Image Imgsrc={Img1}/>
-                        </div>
-                        
-                        <div class="carousel-item Vbl">
-                            <Image Imgsrc={Img2}/>
-                        </div>
-                        
-                        <div class="carousel-item Vbl">
-                            <Image Imgsrc={Img3}/>
-                        </div>
-                        
-                        <div class="carousel-item Vbl">
-                            <Image Imgsrc={Img4}/>
-                        </div>
-                        
-                    </div>
-                </div>     
-            </Container>   
-        </div> */}
-        <div className='bg-Uipresentaion bg-center bg-cover bg-no-repeat h-[1172px] w-full my-32 pt-96'>
+    <>       
+        <div className='bg-Uipresentaion bg-center bg-cover bg-no-repeat  lg:h-[1172px] w-full lg:my-32 pt-40 lg:pt-96'>
             
             <Container>
                 <div>
@@ -75,9 +35,9 @@ const UiPresentation = () => {
                     <Heading className='text-center text-white pt-4'>watch our UI presentation</Heading>
                 </div>
                 <div >
-                    <div class="carousel  h-[900px]">
+                    <div class="carousel h-[500px] lg:h-[900px] mt-36">
                         <div class="carousel-item Vbl">
-                            <Image className='h-full' Imgsrc={Img0}/>
+                            <Image className='h-[550px] ' Imgsrc={Img0}/>
                         </div>
                         
                         <div class="carousel-item Vbl">
