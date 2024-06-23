@@ -15,7 +15,6 @@ import Footer from "../Components/Footer/Footer";
 const Home = () => {
     return (
        <>
-         <Navbar></Navbar>
          <Banner></Banner>
          <WhatYouGet></WhatYouGet>
          <TheMostPop></TheMostPop>
@@ -25,7 +24,6 @@ const Home = () => {
          <TrialPart></TrialPart>
          <QuestionPart></QuestionPart>
          <ArticlePart></ArticlePart>
-         <Footer></Footer>
        </>
     );
 }

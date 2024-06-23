@@ -16,11 +16,13 @@ const Navbar = () => {
     setShow(!show)
   }
   return (
-    <div className='absolute w-full top-0 left-0 z-10'>
+    <div className='absolute w-full top-0 left-0 z-10 mt-4'>
       <Container>
         <Flex className='items-center'>
           <div className='w-1/5'>
-            <img src={logo} alt="logo" />
+            <NavLink to='/'>
+              <img src={logo} alt="logo" />
+            </NavLink>
           </div>
           <Flex className='justify-start w-3/5 items-center'>
             <div>
@@ -28,7 +30,9 @@ const Navbar = () => {
                 <NavLink to='/features'>
                 <ListItem ItemName='Features' className='hover:text-primary duration-300 ' />
                 </NavLink>
+                <NavLink to='/Download app'>
                 <ListItem ItemName='Download app' className='hover:text-primary duration-300 !list-disc' />
+                </NavLink>
                 <ListItem ItemName='UI screens' className='hover:text-primary duration-300 !list-disc' />
                 <ListItem ItemName='Testimonials' className='hover:text-primary duration-300 !list-disc' />
                 <ListItem ItemName='FAQ' className='hover:text-primary duration-300 !list-disc' />

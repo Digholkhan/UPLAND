@@ -35,7 +35,7 @@ const UiPresentation = () => {
                     <Heading className='text-center text-white pt-4'>watch our UI presentation</Heading>
                 </div>
                 <div >
-                    <div class="carousel h-[500px] lg:h-[900px] mt-36">
+                    <div class="carousel h-[500px] lg:h-[900px] ">
                         <div class="carousel-item Vbl">
                             <Image className='h-[550px] ' Imgsrc={Img0}/>
                         </div>

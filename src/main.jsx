@@ -2,8 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-
-import Features from './Pages/Features.jsx'
+import Features from './Pages/Features/Features.jsx'
 import {
   createRoutesFromElements,
   createBrowserRouter,
@@ -12,6 +11,7 @@ import {
 } from "react-router-dom";
 import AutoLayout from './Pages/AutoLayout.jsx'
 import Home from './Pages/Home.jsx'
+import StorePart from './Components/StorePart/StorePart.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +20,7 @@ const router = createBrowserRouter(
       element={<AutoLayout />}>
       <Route index element={<Home />} ></Route>
       <Route path='Features' element={<Features />} ></Route>
+      <Route path='Download app' element={<StorePart />} ></Route>
     </Route>
 
   )
