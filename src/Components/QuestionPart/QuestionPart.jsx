@@ -7,6 +7,7 @@ import dots from '../../assets/dots2.png'
 import Heading from '../Heading';
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
+import BgElement from '../../assets/BgElement.png'
 
 const QuestionPart = () => {
   const [show,setShow]= useState(false);
@@ -18,7 +19,9 @@ const QuestionPart = () => {
   // }
 
   return (
-    <div>
+    <>
+      <div className='relative'>
+        <div className='absolute top-20 left-0 -z-10'><Image Imgsrc={BgElement}/></div>
         <Container>
             <Flex className='flex-wrap justify-center'>
                 <div className='bg-PlayBg bg-cover w-[552px] lg:mr-[30px]'>
@@ -27,7 +30,7 @@ const QuestionPart = () => {
                     </div>
                 </div>
               <div>
-                <div className='pt-20 lg:pt-0'>
+                <div className='pt-20 lg:pt-0 z-10'>
                   <Image Imgsrc={dots}/>
                   <Heading className='pt-3 pb-12'>Frequently Asked Questions</Heading>
                 </div>
@@ -80,7 +83,8 @@ const QuestionPart = () => {
               </div>
             </Flex>
         </Container>
-    </div>
+      </div>
+    </>  
   )
 }
 

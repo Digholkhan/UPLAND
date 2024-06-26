@@ -24,6 +24,8 @@ export default {
         'FooterBG':"url('/src/assets/FooterBg.png')",
         'FooterCard':"url('/src/assets/FooterCard.png')",
         'Header':"url('/src/assets/Header.png')",
+        'PopUp':"url('/src/assets/PopUp.png')",
+        'Error':"url('/src/assets/Error.png')",
       }
     },
   },

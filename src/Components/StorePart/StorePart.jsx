@@ -10,12 +10,14 @@ import Box from '../Box'
 import List from '../List'
 import ListItem from '../ListItem'
 import Flex from '../Flex'
+import BgElement from '../../assets/BgElement.png'
 
 const StorePart = () => {
   return (
-    <div className='lg:bg-BgElement bg-no-repeat lg:bg-right-top '>  
+    <div className='relative'>  
+        <div className='absolute top-0 right-0 hidden xl:block'><Image Imgsrc={BgElement}/></div>
         <Container>
-            <div className='py-16 lg:py-40'>
+            <div className='py-16 xl:py-40'>
                 <Flex className='flex-wrap justify-center'>
                     <div className='w-[500px]'>
                         <Image Imgsrc={dots}/>
@@ -28,8 +30,8 @@ const StorePart = () => {
                             <Button  className='relative py-[18px] px-[35px] pl-[50px] rounded-full text-primary border-2 border-primary ml-[20px] hover:bg-primary hover:text-white'><FaApple className='absolute text-[24px] top-[18px] left-[20px]'/>App store</Button>
                         </div>
                     </div>
-                    
-                        <Box className='w-[300px] lg:pl-[100px]'>
+                    <div className='flex'>
+                        <Box className='w-[300px] xl:pl-[100px]'>
                             <h6 className='text-primary font-medium text-xs'>Basic</h6>
                             <h5 className='text-[32px] font-medium'>$12</h5>
                             <p className='text-secondary text-base pb-2.5 border-b-2 border-[#5841a39e] border-dotted space-x-2'>/per month</p>
@@ -52,6 +54,7 @@ const StorePart = () => {
                                 <ListItem>Proident excepteur</ListItem>
                             </List>
                         </Box>
+                    </div>
                 </Flex>
             </div>
         </Container>

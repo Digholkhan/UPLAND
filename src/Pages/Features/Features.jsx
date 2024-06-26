@@ -17,7 +17,7 @@ import 'react-calendar/dist/Calendar.css';
 import '../Features/calender.css';
 import List from '../../Components/List'
 import ListItem from '../../Components/ListItem'
-
+import BgElement from '../../assets/BgElement.png'
 
 
 
@@ -32,11 +32,12 @@ const Features = () => {
   return (
     <>
       <HeaderPart Hname='Blog' Page='Blog' />
-      <div className='py-40'>
-        <Flex className='justify-center'>
-          <div className='leftPart grid gap-y-14'>
+      <div className='py-40 relative'>
+        <div className='absolute top-96 left-0'><Image Imgsrc={BgElement}/></div>
+        <Flex className='justify-center gap-x-[50px]'>
+          <div className='leftPart grid gap-y-14 '>
             <div className='w-[800px] rounded-[20px] shadow-lg overflow-hidden'>
-              <Image Imgsrc={Img2} className='h-[350px]' />
+              <Image Imgsrc={Img2} className='h-[350px] w-full' />
               <div className='px-10 py-12'>
                 <Heading className='!text-[36px]'>a selection of the best apps for 2020</Heading>
                 <p className='text-secondary mt-3'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -52,7 +53,7 @@ const Features = () => {
               </div>
             </div>
             <div className='w-[800px] rounded-[20px] shadow-lg overflow-hidden'>
-              <Image Imgsrc={Img1} className='h-[350px]' />
+              <Image Imgsrc={Img1} className='h-[350px] w-full' />
               <div className='px-10 py-12'>
                 <Heading className='!text-[36px]'>a selection of the best apps for 2020</Heading>
                 <p className='text-secondary mt-3'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -68,7 +69,7 @@ const Features = () => {
               </div>
             </div>
             <div className='w-[800px] rounded-[20px] shadow-lg overflow-hidden'>
-              <Image Imgsrc={Img3} className='h-[350px]' />
+              <Image Imgsrc={Img3} className='h-[350px] w-full' />
               <div className='px-10 py-12'>
                 <Heading className='!text-[36px]'>a selection of the best apps for 2020</Heading>
                 <p className='text-secondary mt-3'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -84,9 +85,9 @@ const Features = () => {
               </div>
             </div>
           </div>
-          <div className='rightPart ml-12 w-[300px]'>
+          <div className='rightPart w-[300px]'>
             <div className='relative w-full'>
-              <input type="text" placeholder='Search' className=' !py-1 !border-2 !border-solid !border-secondary !rounded-full !pl-5 !mb-0' />
+              <input type="text" placeholder='Search' className=' !py-1 !border-2 !border-solid !shadow-none !border-[#E6EBFC] !ring-primary !rounded-full !pl-5 !mb-0' />
               <IoIosSearch className='absolute top-[18px] right-0 text-2xl text-secondary' />
             </div>
             <div className='mt-12'>
@@ -114,23 +115,23 @@ const Features = () => {
               />
             </div>
             <div className='mt-12 grid grid-cols-3 gap-1'>    
-                <Image Imgsrc={Img1} className='h-[100px] w-[100px]'/>
-                <Image Imgsrc={Img2} className='h-[100px] w-[100px]'/>
-                <Image Imgsrc={Img3} className='h-[100px] w-[100px]'/>
-                <Image Imgsrc={Img4} className='h-[100px] w-[100px]'/>
-                <Image Imgsrc={Img5} className='h-[100px] w-[100px]'/>
-                <Image Imgsrc={Img6} className='h-[100px] w-[100px]'/>
+                <Image Imgsrc={Img1} className='h-[100px] w-[100px] hover:scale-150 transition duration-150 ease-in-out'/>
+                <Image Imgsrc={Img2} className='h-[100px] w-[100px] hover:scale-150 transition duration-150 ease-in-out'/>
+                <Image Imgsrc={Img3} className='h-[100px] w-[100px] hover:scale-150 transition duration-150 ease-in-out'/>
+                <Image Imgsrc={Img4} className='h-[100px] w-[100px] hover:scale-150 transition duration-150 ease-in-out'/>
+                <Image Imgsrc={Img5} className='h-[100px] w-[100px] hover:scale-150 transition duration-150 ease-in-out'/>
+                <Image Imgsrc={Img6} className='h-[100px] w-[100px] hover:scale-150 transition duration-150 ease-in-out'/>
             </div>
             <div className='mt-12'>
                 <h3 className='text-3xl font-semibold  border-b-2 border-dotted pb-2 border-secondary'>Tags</h3>
-                <List className='text-secondary flex gap-x-10 '>
+                <List className='text-secondary flex flex-wrap gap-x-7 mt-6 items-center'>
                   <ListItem ItemName='Android app'/>
-                  <ListItem ItemName='IOS app'/>
-                  <ListItem ItemName='Mobile'/>
+                  <ListItem ItemName='IOS app' className='before:content-["•"] before:text-primary block before:text-2xl before:mr-4 before:mt-2 leading-3'/>
+                  <ListItem ItemName='Mobile' className='before:content-["•"] before:text-primary block before:text-2xl before:mr-4 before:mt-2 leading-3'/>
                   <ListItem ItemName='App design'/>
-                  <ListItem ItemName='Development'/>
+                  <ListItem ItemName='Development' className='before:content-["•"] before:text-primary block before:text-2xl before:mr-4 before:mt-2 leading-3'/>
                   <ListItem ItemName='Collaboration'/>
-                  <ListItem ItemName='Download'/>
+                  <ListItem ItemName='Download' className='before:content-["•"] before:text-primary block before:text-2xl before:mr-4 before:mt-2 leading-3'/>
                 </List>
             </div>
           </div>

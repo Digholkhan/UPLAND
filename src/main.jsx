@@ -12,6 +12,8 @@ import {
 import AutoLayout from './Pages/AutoLayout.jsx'
 import Home from './Pages/Home.jsx'
 import StorePart from './Components/StorePart/StorePart.jsx'
+import Post from './Pages/Post/Post.jsx'
+import Error from './Pages/ErrrorPage/Error.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,7 +22,8 @@ const router = createBrowserRouter(
       element={<AutoLayout />}>
       <Route index element={<Home />} ></Route>
       <Route path='Features' element={<Features />} ></Route>
-      <Route path='Download app' element={<StorePart />} ></Route>
+      <Route path='Post' element={<Post />} ></Route>
+      <Route path='Error' element={<Error />} ></Route>
     </Route>
 
   )

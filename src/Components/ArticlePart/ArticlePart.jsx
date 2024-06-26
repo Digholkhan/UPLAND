@@ -12,7 +12,7 @@ const ArticlePart = () => {
   return (
     <div>
         <Container className='py-40'>
-            <Flex className='flex-wrap justify-end gap-x-[30px]'>
+            <Flex className='flex-wrap justify-center xl:justify-end gap-x-[30px]'>
                 <Box className='!w-[480px] py-10'>
                     <Image Imgsrc={dots}/>
                     <Heading className='pt-3 '>read the latest news and articles</Heading>
@@ -42,8 +42,7 @@ const ArticlePart = () => {
                         <IoShareSocialOutline />
                         <p>Share</p>
                     </Flex>
-                </Box>
-               
+                </Box>       
             </Flex>
         </Container>
     </div>

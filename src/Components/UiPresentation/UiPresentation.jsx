@@ -6,7 +6,7 @@ import SlickSlider from '../SlickSlider/SlickSlider'
 import Slider from "react-slick";
 import Img0 from '../../assets/img-0.png'
 import Img1 from '../../assets/img-1.png'
-import Img2 from '../../assets/img-2.png'
+import Img2 from '../../assets/img-02.png'
 import Img3 from '../../assets/img-3.png'
 import Img4 from '../../assets/img-4.png'
 import Container from '../Container'
@@ -35,9 +35,9 @@ const UiPresentation = () => {
                     <Heading className='text-center text-white pt-4'>watch our UI presentation</Heading>
                 </div>
                 <div >
-                    <div class="carousel h-[500px] lg:h-[900px] ">
+                    <div class="carousel h-[500px] lg:h-[900px] rounded-[20px]">
                         <div class="carousel-item Vbl">
-                            <Image className='h-[550px] ' Imgsrc={Img0}/>
+                            <Image Imgsrc={Img0}/>
                         </div>
                         
                         <div class="carousel-item Vbl">
@@ -45,7 +45,7 @@ const UiPresentation = () => {
                         </div>
                         
                         <div class="carousel-item Vbl">
-                            <Image Imgsrc={Img2}/>
+                            <Image Imgsrc={Img2} className='rounded-[20px]'/>
                         </div>
                         
                         <div class="carousel-item Vbl">

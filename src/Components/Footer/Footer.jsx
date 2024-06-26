@@ -32,7 +32,7 @@ const Footer = () => {
                     <p className='text-secondary pt-3'>Culpa non ex tempor qui nulla laborum. Laboris culpa ea ipsum tempor duis do ullamco eiusmod officia magna ad id.</p>
                 </div>
                 <Flex className='pt-4 gap-x-4 items-center'>
-                    <input type="text" placeholder='Email'  className='!py-1 !border-2 !border-solid !border-secondary !rounded-full !pl-5 !mb-0'/>
+                    <input type="text" placeholder='Email'  className='!py-1 !border-2 !border-solid !shadow-none !border-[#E6EBFC] !ring-primary !rounded-full !pl-5 !mb-0'/>
                     <Button BtnName='Subscribe' className='text-base capitalize text-white bg-BtnC px-9 py-4 rounded-full hover:bg-transparent border-2 border-primary hover:text-primary'/>
                 </Flex>
             </div>

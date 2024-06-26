@@ -26,28 +26,27 @@ const Navbar = () => {
           </div>
           <Flex className='justify-start w-3/5 items-center'>
             <div>
-              <List className={`absolute hover:cursor-pointer lg:static duration-300 lg:flex justify-end gap-x-12 lg:text-white text-base px-5 py-5 lg:px-0 lg:py-0  w-full text-center  bg-white lg:bg-transparent ${show ? 'top-[88px] left-0' : 'top-[88px] left-[-100rem]'}`}>
+              <List className={`absolute hover:cursor-pointer xl:static duration-300 xl:flex justify-end gap-x-12 xl:text-white text-base px-5 py-5 xl:px-0 xl:py-0  w-full text-center  bg-white xl:bg-transparent ${show ? 'top-[88px] left-0' : 'top-[88px] left-[-100rem] items-center'}`}>
                 <NavLink to='/features'>
                 <ListItem ItemName='Features' className='hover:text-primary duration-300 ' />
                 </NavLink>
-                <NavLink to='/Download app'>
+                <NavLink to=''>
                 <ListItem ItemName='Download app' className='hover:text-primary duration-300 !list-disc' />
                 </NavLink>
                 <ListItem ItemName='UI screens' className='hover:text-primary duration-300 !list-disc' />
                 <ListItem ItemName='Testimonials' className='hover:text-primary duration-300 !list-disc' />
                 <ListItem ItemName='FAQ' className='hover:text-primary duration-300 !list-disc' />
-                <ListItem ItemName='' className='hover:text-primary duration-300 !list-disc' />
-                
-            <Button className='lg:absolute top-7 right-[41%] text-primary text-base border-2 rounded-full border-primary py-1 px-5 ml-2.5 hover:text-white hover:bg-BtnC' BtnName='Free Trial' />
+                <ListItem ItemName='' className='hover:text-primary duration-300 !list-disc' />            
+                <Button className=' text-primary text-base border-2 rounded-full border-primary py-1 px-5 hover:text-white hover:bg-BtnC' BtnName='Free Trial' />
               </List>
             </div>
           </Flex>
        
-          <div className='w-1/5 lg:flex justify-end items-center hidden'>
+          <div className='w-1/5 xl:flex justify-end items-center hidden'>
             <Button className='group flex text-white text-lg hover:text-primary'> <CiMobile2 className='text-3xl text-primary group-hover:text-white flex justify-start' />+1 742 65 84 122</Button>
           </div>
           <div onClick={handleClick} className='absolute right-2.5'>
-              {show == true ? <RxCross1 className='text-white'/>:<FaBars className="block lg:hidden text-white"/>}
+              {show == true ? <RxCross1 className='text-white'/>:<FaBars className="block xl:hidden text-white"/>}
          </div>
         </Flex>
       </Container>
