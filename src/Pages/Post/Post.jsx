@@ -22,6 +22,7 @@ import Img9 from '../../assets/99.png'
 import tg from '../../assets/tg.png'
 import { GoReply } from "react-icons/go";
 import Button from '../../Components/Button'
+import Container from '../../Components/Container'
 
 
 const Post = () => {
@@ -34,10 +35,12 @@ const Post = () => {
   return (
     <>
     <HeaderPart Hname='Post' Page='Post' />
-    <div className='py-40 relative'>
-    <div className='absolute top-96 left-0'><Image Imgsrc={BgElement}/></div>
-      <Flex className='justify-center gap-x-[50px]'>
-        <div className='leftPart w-[800px]'>
+    <Container>
+    
+    <div className='py-20 xl:py-40 relative'>
+    <div className='absolute top-96 left-0 xl:block hidden'><Image Imgsrc={BgElement}/></div>
+      <Flex className='flex-wrap justify-center gap-x-[50px]'>
+        <div className='leftPart w-full lg:w-[800px] '>
           <div className='border-b-2  border-dashed border-secondary'>
             <Image Imgsrc={Img2} className='h-[400px] w-full rounded-[20px] ' />
             <div className='py-2'> 
@@ -116,7 +119,7 @@ const Post = () => {
               </Flex>
                <p className='text-secondary'>Ullamco exercitation incididunt ut fugiat ex velit nulla. Lorem amet ut ad aute irure exercitation elit exercitation Lorem non aliqua occaecat ea sunt.</p>
             </div>
-            <div className='mt-10 ml-20 pb-10  border-b-2 border-secondary border-dashed'> 
+            <div className='mt-10 xl:ml-20 pb-10  border-b-2 border-secondary border-dashed'> 
               <Flex className='items-center gap-x-4 pt-7 text-secondary pb-5'>
                 <div className='h-5 w-5 rounded-full bg-[#BD93D8]'></div>
                 <p>Annette Black</p>
@@ -143,17 +146,19 @@ const Post = () => {
           </div>
           <div className='mt-10'>
             <Heading className='!text-4xl '>leave a reply</Heading>
-            <div>
-                <Flex className='gap-x-5'>
-                  <input type="text" placeholder='Name'  className='!w-[400px] !my-8 !py-1 !border-2 !border-solid !border-[#E6EBFC] !shadow-none !bg-white !text-secondary !rounded-full !pl-5 !mb-0'/>
-                  <input type="text" placeholder='Email'  className='!w-[400px] !my-8 !py-1 !border-2 !border-solid !border-[#E6EBFC] !shadow-none  !bg-white !text-secondary !rounded-full !pl-5 !mb-0'/>
+            <div className=''>
+                <Flex className='flex-wrap xl:flex-nowrap gap-x-5'>
+                  <input type="text" placeholder='Name'  className='!w-full xl:!w-[400px] !my-8 !py-1 !border-2 !border-solid !border-[#E6EBFC] !shadow-none !bg-white !text-secondary !rounded-full !pl-5 !mb-0'/>
+                  <input type="text" placeholder='Email'  className='!w-full xl:!w-[400px] !my-8 !py-1 !border-2 !border-solid !border-[#E6EBFC] !shadow-none  !bg-white !text-secondary !rounded-full !pl-5 !mb-0'/>
                 </Flex>
-                <input type="text" placeholder='Message'  className='!w-Full !my-8 !py-1 !border-2 !border-solid !border-[#E6EBFC] !shadow-none !bg-white  !text-secondary !rounded-[20px] !pl-5 !mb-0  !pb-24'/>
+                <div className='flex flex-wrap'>
+                <input type="text" placeholder='Message'  className='!w-full !my-8 !py-1 !border-2 !border-solid !border-[#E6EBFC] !shadow-none !bg-white  !text-secondary !rounded-[20px] !pl-5 !mb-0  !pb-24'/>
+                </div>
             </div>
             <Button BtnName='Post Comment' className='mt-5 text-sm lg:text-base text-white bg-BtnC px-5 lg:px-9 py-2 lg:py-4 rounded-full  border-2 border-primary '/>
           </div>
         </div>
-        <div className='rightPart w-[300px]'>
+        <div className='rightPart w-[300px] mt-10 xl:mt-0'>
           <div className='relative w-full'>
             <input type="text" placeholder='Search' className=' !py-1 !border-2 !border-solid !border-[#E6EBFC] !shadow-none !rounded-full !pl-5 !mb-0' />
             <IoIosSearch className='absolute top-[18px] right-0 text-2xl text-secondary' />
@@ -205,6 +210,8 @@ const Post = () => {
         </div>
       </Flex>
     </div>
+    </Container>
+    
   </>
   )
 }

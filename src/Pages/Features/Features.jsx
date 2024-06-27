@@ -18,6 +18,7 @@ import '../Features/calender.css';
 import List from '../../Components/List'
 import ListItem from '../../Components/ListItem'
 import BgElement from '../../assets/BgElement.png'
+import Container from '../../Components/Container'
 
 
 
@@ -32,14 +33,15 @@ const Features = () => {
   return (
     <>
       <HeaderPart Hname='Blog' Page='Blog' />
-      <div className='py-40 relative'>
-        <div className='absolute top-96 left-0'><Image Imgsrc={BgElement}/></div>
-        <Flex className='justify-center gap-x-[50px]'>
-          <div className='leftPart grid gap-y-14 '>
-            <div className='w-[800px] rounded-[20px] shadow-lg overflow-hidden'>
+      <Container>
+      <div className='py-20 xl:py-40 relative'>
+        <div className='absolute top-96 left-0 xl:block hidden -z-10'><Image Imgsrc={BgElement}/></div>
+        <Flex className='flex-wrap justify-center gap-x-[50px]  mx-auto'>
+          <div className='leftPart grid gap-y-14 w-full lg:w-[800px] relative z-10'>
+            <div className='bg-white rounded-[20px] mx-auto shadow-lg overflow-hidden'>
               <Image Imgsrc={Img2} className='h-[350px] w-full' />
               <div className='px-10 py-12'>
-                <Heading className='!text-[36px]'>a selection of the best apps for 2020</Heading>
+                <Heading className='text-2xl xl:text-2xl'>a selection of the best apps for 2020</Heading>
                 <p className='text-secondary mt-3'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 <Flex className='items-center gap-x-4 pt-7 text-secondary'>
                   <div className='h-5 w-5 rounded-full bg-[#BD93D8]'></div>
@@ -52,10 +54,10 @@ const Features = () => {
                 </Flex>
               </div>
             </div>
-            <div className='w-[800px] rounded-[20px] shadow-lg overflow-hidden'>
+            <div className=' rounded-[20px] shadow-lg overflow-hidden'>
               <Image Imgsrc={Img1} className='h-[350px] w-full' />
               <div className='px-10 py-12'>
-                <Heading className='!text-[36px]'>a selection of the best apps for 2020</Heading>
+                <Heading className='text-2xl xl:!text-[36px]'>a selection of the best apps for 2020</Heading>
                 <p className='text-secondary mt-3'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 <Flex className='items-center gap-x-4 pt-7 text-secondary'>
                   <div className='h-5 w-5 rounded-full bg-[#BD93D8]'></div>
@@ -68,10 +70,10 @@ const Features = () => {
                 </Flex>
               </div>
             </div>
-            <div className='w-[800px] rounded-[20px] shadow-lg overflow-hidden'>
+            <div className=' rounded-[20px] shadow-lg overflow-hidden'>
               <Image Imgsrc={Img3} className='h-[350px] w-full' />
               <div className='px-10 py-12'>
-                <Heading className='!text-[36px]'>a selection of the best apps for 2020</Heading>
+                <Heading className='text-2xl xl:!text-[36px]'>a selection of the best apps for 2020</Heading>
                 <p className='text-secondary mt-3'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 <Flex className='items-center gap-x-4 pt-7 text-secondary'>
                   <div className='h-5 w-5 rounded-full bg-[#BD93D8]'></div>
@@ -85,7 +87,7 @@ const Features = () => {
               </div>
             </div>
           </div>
-          <div className='rightPart w-[300px]'>
+          <div className='rightPart w-[300px] mt-10 xl:mt-0'>
             <div className='relative w-full'>
               <input type="text" placeholder='Search' className=' !py-1 !border-2 !border-solid !shadow-none !border-[#E6EBFC] !ring-primary !rounded-full !pl-5 !mb-0' />
               <IoIosSearch className='absolute top-[18px] right-0 text-2xl text-secondary' />
@@ -137,6 +139,7 @@ const Features = () => {
           </div>
         </Flex>
       </div>
+      </Container>
     </>
   )
 }

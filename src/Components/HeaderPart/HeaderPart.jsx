@@ -9,7 +9,7 @@ const HeaderPart = ({className,children,Hname,Page}) => {
     <>
         <div className={`bg-Header bg-cover relative top-0 py-52 ${className}`}>
           <Container>
-              <div className=' ml-[330px]'>
+              <div className='ml-10 xl:ml-[330px]'>
                   <h5 className='text-[60px] font-semibold text-white'>{Hname}</h5>
                   <List className='flex gap-x-10 text-[#B3B1B7] mt-5'>
                       <NavLink to='/'>

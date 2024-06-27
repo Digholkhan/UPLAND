@@ -22,8 +22,8 @@ const WhatYouGet = () => {
                 </div>
                 <Heading>See what you will get with us</Heading>
             </div>
-            <Flex className='flex-wrap justify-center gap-8 lg:gap-x-[30px] mt-[50px] relative z-10'>
-                <Box Imgsrc={Img1} className='shadow-lg bg-white'>
+            <Flex data-aos="fade-up" className='flex-wrap justify-center gap-8 lg:gap-x-[30px] mt-[50px] relative z-10'>
+                <Box Imgsrc={Img1} className='shadow-lg bg-white' >
                     <h2 className='text-xl lg:text-[28px] font-semibold'>Development courses</h2>
                     <p className='text-sm lg:text-base text-secondary pt-[15px]'>Culpa non ex tempor qui nulla laborum. Laboris culpa ea incididunt dolore ipsum tempor duis do ullamco eiusmod officia magna ad id.</p>
                 </Box>
