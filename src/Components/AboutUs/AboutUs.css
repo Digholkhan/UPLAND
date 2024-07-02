@@ -1,0 +1,13 @@
+.slick-slide{
+    display: flex !important;
+    justify-content: end !important;
+    overflow: hidden;
+    padding: 20px;
+}
+.slick-next:before, .slick-prev:before {
+    font-size: 0px;
+}
+/* .slick-list{
+    margin-left: 180px;
+} */
+
