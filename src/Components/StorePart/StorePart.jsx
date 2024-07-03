@@ -30,7 +30,7 @@ const StorePart = () => {
                             <Button  className='relative py-[18px] px-[35px] pl-[50px] rounded-full text-primary border-2 border-primary ml-[20px] hover:bg-primary hover:text-white'><FaApple className='absolute text-[24px] top-[18px] left-[20px]'/>App store</Button>
                         </div>
                     </div>
-                    <div className='flex flex-wrap'>
+                    <div className='flex flex-wrap justify-center xl:justify-normal'>
                         <Box className='w-[300px] xl:pl-[100px]'>
                             <h6 className='text-primary font-medium text-xs'>Basic</h6>
                             <h5 className='text-[32px] font-medium'>$12</h5>

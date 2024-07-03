@@ -30,7 +30,7 @@ const Navbar = () => {
                 <NavLink to='/features'>
                 <ListItem ItemName='Features' className='hover:text-primary duration-300 ' />
                 </NavLink>
-                <NavLink to=''>
+                <NavLink to='/post'>
                 <ListItem ItemName='Download app' className='hover:text-primary duration-300 !list-disc' />
                 </NavLink>
                 <ListItem ItemName='UI screens' className='hover:text-primary duration-300 !list-disc' />
