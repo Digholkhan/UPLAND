@@ -25,9 +25,9 @@ const UiPresentation = () => {
     };
   return (
     <>       
-        <div className='bg-Uipresentaion bg-center bg-cover bg-no-repeat  lg:h-[1172px] w-full lg:my-32 pt-40 lg:pt-96'>
+        <div  className='bg-Uipresentaion bg-center bg-cover bg-no-repeat  lg:h-[1172px] w-full lg:my-32 pt-40 lg:pt-96'>
             
-            <Container>
+            <Container id='uipresentastion'>
                 <div>
                     <div className="w-4 mx-auto text-center ">
                         <Image Imgsrc={dots} />

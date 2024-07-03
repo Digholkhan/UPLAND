@@ -24,7 +24,7 @@ const QuestionPart = () => {
     <>
       <div className='relative'>
         <div className='absolute top-20 left-0 -z-10'><Image Imgsrc={BgElement}/></div>
-        <Container>
+        <Container  id='faq' >
             <Flex className='flex-wrap justify-center'>
                 <div className='bg-PlayBg bg-cover w-[552px] lg:mr-[30px]'>
                     <div className='w-[300px] lg:w-[500px] h-[300px] lg:h-[500px] rounded-full bg-[#BD93D8] flex justify-center items-center mx-auto'>

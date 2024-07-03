@@ -33,9 +33,13 @@ const Navbar = () => {
                 <NavLink to='/post'>
                 <ListItem ItemName='Download app' className='hover:text-primary duration-300 !list-disc' />
                 </NavLink>
-                <ListItem ItemName='UI screens' className='hover:text-primary duration-300 !list-disc' />
+                <a href="#uipresentastion">
+                <ListItem ItemName='UI screens' className='hover:text-primary duration-300 !list-disc'/>
+                </a>
                 <ListItem ItemName='Testimonials' className='hover:text-primary duration-300 !list-disc' />
+                <a href="#faq">
                 <ListItem ItemName='FAQ' className='hover:text-primary duration-300 !list-disc' />
+                </a>
                 <ListItem ItemName='' className='hover:text-primary duration-300 !list-disc' />            
                 <Button className=' text-primary text-base border-2 rounded-full border-primary py-1 px-5 hover:text-white hover:bg-BtnC' BtnName='Free Trial' />
               </List>

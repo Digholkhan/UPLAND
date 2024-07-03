@@ -1,3 +1,6 @@
+html,body{
+	scroll-behavior:smooth;
+}
 .carousel {
 	height: 700px;
 	perspective: 600px;
