@@ -21,7 +21,7 @@ export default {
         'TrialBg':"url('/src/assets/Trial-bg.png')",
         'TrialBGFrame':"url('/src/assets/Trial-bg-Frame.png')",
         'PlayBg':"url('/src/assets/PlayBg.png')",
-        'FooterBG':"url('/src/assets/FooterBg.png')",
+        'FooterBG':"url('/src/assets/FooterBG.png')",
         'FooterCard':"url('/src/assets/FooterCard.png')",
         'Header':"url('/src/assets/Header.png')",
         'PopUp':"url('/src/assets/PopUp.png')",
